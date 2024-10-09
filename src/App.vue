@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <header>
-      <nav>
+      <nav class="navbar">
         <span>Hello World!</span>
         <div class="social-icons">
           <a href="https://www.linkedin.com" target="_blank">
@@ -53,9 +53,16 @@ header {
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 39px;
+  height: 35px;
   margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav span {
