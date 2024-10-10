@@ -8,7 +8,7 @@
     </div>
     <div class="buttons">
       <router-link to="/projects">
-        <button>View Projects →</button>
+        <button>Projects →</button>
       </router-link>
       <router-link to="/about">
         <button>About Me →</button>
@@ -48,9 +48,18 @@ export default {
 button {
   margin: 10px;
   padding: 10px 20px;
+  border: 2px solid black;
   border-radius: 50px;
+  font-size: 18px;
   background-color: white;
-  border: none;
   cursor: pointer;
+  width: 150px;
+  transition: background 0.3s, color 0.3s, border 0.3s
+}
+
+button:hover{
+  color: white;
+  background-color: #111;
+  border: 2px solid white;
 }
 </style>

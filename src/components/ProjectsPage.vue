@@ -3,8 +3,8 @@
     <!-- Projects Grid -->
     <div class="projects-grid">
       <div class="project-card" v-for="(project, index) in projects" :key="index" @click="goToProject(project.link)">
-          <h2>{{ project.title }} →</h2>
-          <p>{{ project.description }}</p>
+        <h1>{{ project.title }} →</h1>
+        <p>{{ project.description }}</p>
       </div>
     </div>
 
@@ -20,10 +20,9 @@ export default {
   data() {
     return {
       projects: [
-        { title: 'Project 1', description: 'Project Description', link: 'https://example1.com' },
-        { title: 'Project 2', description: 'Project Description', link: 'https://example2.com' },
-        { title: 'Project 3', description: 'Project Description', link: 'https://example3.com' },
-        { title: 'Project 4', description: 'Project Description', link: 'https://example4.com' },
+        { title: 'Glowing Bud Admin Platform', description: 'An admin platform which allows the clients to see details on their users, add/update data plans, manage e-sim inventory and track telemetry data.', link: 'https://app.glowingbud.com' },
+        { title: 'Glowing Bud E-sim Application', description: 'A web/mobile app which enables users to purchase travel e-sims and manage data plans, it supports multiple countries and regions based on individual clients requirments.', link: 'https://www.glowingbud.com/white-label-esim-web-application/' },
+        { title: 'String', description: 'A basic chat application built by me in 2021. I recently updated it using vuejs and deployed on netlify.', link: 'https://cool-banoffee-1bc218.netlify.app/' },
       ],
     };
   },
@@ -90,24 +89,23 @@ nav span {
   text-align: left;
   cursor: pointer;
   /* Make cards look clickable */
-  transition: background 1.5s, color 1.5s;
+  transition: background 0.7s, color 0.7s;
 }
 
 .project-card:hover {
   /* Highlight effect on hover */
-  color: black; 
+  color: black;
   background: white
-
 }
 
-.project-card h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.project-card h1 {
+  font-size: 30px;
+  margin: 10px;
 }
 
 .project-card p {
-  font-size: 16px;
-  margin: 0;
+  font-size: 20px;
+  margin: 10px;
 }
 
 /* Back button styling */
@@ -123,7 +121,7 @@ nav span {
   border: 1px solid white;
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: background-color 0.3s;
 }
 

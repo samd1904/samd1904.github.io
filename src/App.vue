@@ -5,10 +5,10 @@
       <nav class="navbar">
         <span>Hello World!</span>
         <div class="social-icons">
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/saumya-darne/" target="_blank">
             <img src="@/assets/linkedin-icon.png" alt="LinkedIn" />
           </a>
-          <a href="https://www.github.com" target="_blank">
+          <a href="https://github.com/samd1904" target="_blank">
             <img src="@/assets/github-icon.svg" alt="GitHub" />
           </a>
         </div>
