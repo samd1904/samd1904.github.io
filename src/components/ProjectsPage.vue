@@ -35,16 +35,15 @@ export default {
 </script>
 
 <style scoped>
-/* General page styling */
 .projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   color: white;
   background-color: #111;
   padding: 20px;
-}
+  overflow-y: auto;}
 
 header {
   background-color: #ffffff;
@@ -76,11 +75,12 @@ nav span {
 /* Projects grid styling */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   /* Creates two columns */
   gap: 20px;
   /* Space between cards */
   flex-grow: 1;
+  overflow-y: auto;
 }
 
 .project-card {
@@ -90,6 +90,7 @@ nav span {
   cursor: pointer;
   /* Make cards look clickable */
   transition: background 0.7s, color 0.7s;
+  margin: 10px 0;
 }
 
 .project-card:hover {

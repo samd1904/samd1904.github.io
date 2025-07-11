@@ -69,4 +69,16 @@ nav span {
   font-size: 24px;
   font-weight: bold;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav span {
+    font-size: 20px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
 </style>

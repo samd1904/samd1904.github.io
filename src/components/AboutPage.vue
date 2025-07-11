@@ -1,7 +1,6 @@
-<!-- src/views/AboutMe.vue -->
+<!-- src/components/AboutPage.vue -->
 <template>
   <div class="about-container">
-
     <div class="content">
       <div class="about-me">
         <p>
@@ -40,7 +39,6 @@
               </span>
             </p>
           </li>
-
           <li style="margin-bottom: 2em;">
             <h3 style="margin: 0; font-size: 1.3em; font-weight: bold;">&#x2022; Node JS Developer</h3>
             <p style="margin: 0; font-size: 1em; font-weight: 400;">
@@ -50,7 +48,6 @@
               </span>
             </p>
           </li>
-
           <li>
             <h3 style="margin: 0; font-size: 1.3em; font-weight: bold;">&#x2022; Senior Software Developer Level-3 (SDE 3)</h3>
             <p style="margin: 0; font-size: 1em; font-weight: 400;">
@@ -64,7 +61,6 @@
         </ul>
       </div>
     </div>
-
     <div class="back-button">
       <router-link to="/" class="back-link">← Back</router-link>
     </div>
@@ -83,10 +79,11 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   color: white;
   background-color: #111;
   padding: 20px;
+  overflow-y: auto;
 }
 
 header {
@@ -128,6 +125,7 @@ li {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  overflow-y: auto;
 }
 
 .about-me {
@@ -174,5 +172,24 @@ li {
 .back-link:hover {
   background-color: white;
   color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .about-me, .work-experience {
+    width: 100%;
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+
+  .back-link {
+    font-size: 16px;
+  }
 }
 </style>
